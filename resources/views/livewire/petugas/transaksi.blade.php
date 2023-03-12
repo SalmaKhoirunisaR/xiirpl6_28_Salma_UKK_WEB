@@ -52,14 +52,14 @@
                         <td>
                             <ul>
                                 @foreach ($item->detail_peminjaman as $detail_peminjaman)
-                                <li>{{$detail_peminjaman->buku->judul}}</li>
+                                <li>{{$detail_peminjaman->buku->judul ?? 'None'}}</li>
                                 @endforeach
                             </ul>
                         </td>
                        <td>
                             <ul>
                                 @foreach ($item->detail_peminjaman as $detail_peminjaman)
-                                <li>{{$detail_peminjaman->buku->rak->lokasi}}</li>
+                                <li>{{$detail_peminjaman->buku->rak->lokasi ?? 'None'}}</li>
                                 @endforeach
                             </ul>
                         </td>
